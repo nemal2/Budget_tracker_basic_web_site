@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* --------------- Root variables ------------------------*/
+:root{
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,0.18);
+    --color-primary:#111e88;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+    --card-border-radius:2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/* --------------- Dark theme variables --------------- */
+.dark-theme-variables {
+    --color-background:#181a1e;
+    --color-white:#202528;
+    --color-dark:#edeffd;
+    --color-dark-variant:#a3bdcc;
+    --color-light:rgba(0,0,0,0.4);
+    --box-shadow:0 2rem 3rem var(--color-light);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100vh;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: #ffffff; /* Light background color */
+    color: #000000; /* Light text color */
+}
+
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+a{
+    color: var(--color-dark);
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+.profile-photo{
+    width: 2.8rem;
+    height:2.8rem;
+    border-radius:50%;
+    overflow: hidden;
+}
+
+.text-muted{
+    color: var(--color-info-dark);
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+b{
+    color: var(--color-dark);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.success{
+    color: var(--color-success);
+}
+
+.warning{
+    color: var(--color-warning);
+}
+
+aside{
+   
+    height: 100vh;
+    background:var(--color-background);
+}
+
+aside .top{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .logo{
+    display: flex;
+    gap: 0.8rem;
+}
+
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+
+aside .close{
+    display: none;
+}
+
+/* Showcase Area Styling */
+
+.container{
+    background-color: white;
+}
+
+
+.container .top .brand-left{
+    color: #55BA53;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 5rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    
+}
+.container .top.sticky .brand-left{
+    color: #0A2940;
+    
+}
+.container .top .brand-left:hover{
+    color: #0A2940;
+    
+}
+
+/* Top Navbar */
+
+.showcase .navbar-top{
+    width: 1600px;
+    display: flex;
+    padding: 0 80px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0A2940;
+    top: 0;
+    left: 0;
+}
+.showcase .left{
+    display: flex;
+    list-style: none;
+}
+.showcase .left li a{
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #95A2BB;
+    padding: 5px 15px;
+    transition: all 0.5s ease;
+}
+.showcase .left li a:hover{
+    color: #55BA53;
+}
+.showcase .left li:first-child{
+    font-weight: 700;
+    border-right: 1px solid #536DAF;
+}
+.showcase .right{
+    display: flex;
+    list-style: none;
+}
+.showcase .right li a{
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #95A2BB;
+    transition: all 0.5s ease;
+}
+.showcase .right li a:hover{
+    color: #55BA53;
+}
+
+/* ============= sidebar ========================== */
+aside .sidebar{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    position: relative;
+    top: 3rem;
+    box-shadow: var(--box-shadow);
+}
+
+aside h3{
+    font-weight: 500;
+}
+
+aside .sidebar a {
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a span {
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+aside .sidebar a.C {
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+} 
+
+aside .sidebar a.C:before {
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+aside .sidebar a.C span {
+    color: var(--color-primary);
+    margin-left: calc(1rem - 6px);
+}
+
+aside .sidebar a:hover{
+    color: var(--color-primary);
+}
+
+aside .sidebar a:hover span{
+    margin-left: 1rem;
+}
+
+/* ======================================= main ===================================*/
+
+main{
+    margin-top: 1.4rem;
+}
+
+main .profile-details {
+    text-align: left;
+    position: absolute;
+    left: 20rem;
+
+    background-color: #8ac8eb9e;
+    padding: 80px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 55rem;
+    width: 100%;
+}
+
+main .profile-details img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid var(--color-primary);
+    transition: border 0.3s ease-in-out;
+    margin: 0 auto 20px;
+
+}
+
+main .profile-details img:hover {
+    border-color: var(--color-primary); 
+}
+
+table {
+    list-style-type:circle;
+    display: flex;
+    
+}
+
+table tr {
+    list-style-type: disc;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+main .profile-details strong {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+main button {
+    padding: 5px 5px;
+    background-color: var(--color-info-light);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+    left: 3rem;
+    top: -1.5rem;
+    
+    transition: background-color 0.3s ease-in-out;
+}
+
+main button:hover {
+    background-color: rgb(67, 134, 235);
+}
+
+
+/* ====================================== Right =================================== */
+.right{
+    margin-bottom: 1.4rem;
+}
+
+.right .top {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right .top button {
+    display: none;
+}
+
+
+.right .top .profile{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+    position: absolute;
+    right: 1rem;
+    top: 3.5rem;
+
+    
+}
+
+/*======acount details============*/
+
+.right .Account-details {
+    text-align: left;
+    background-color: #99e4ccb1;
+    position: absolute;
+    right: 2rem;
+    top: 25rem;
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.right .Account-details h1 {
+    color: #333;
+}
+
+.right .Account-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right .Account-details li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right .Account-details strong {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* ============================== Footer ============================== */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    max-width: 110rem;
+    width: 100%;
+    top: 1080px;
+    left: 0;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 300px; /* Flex property adjusted */
+    margin: 0 10px;
+}
+
+.footer-section.about img {
+    width: 150px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    color: #ccc; 
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.footer-section ul li a:hover {
+    color: var(--color-primary); 
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+/* ============================== media quaries ======================== */
+
+@media screen and (max-width:1200px){
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    aside .logo h2{
+        display: none;
+
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    aside .sidebar a{
+        width: 5.6rem;
+    }
+    aside .sidebar a:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+    }
+    main .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    main .recent-orders{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 2rem 0 0 8.8rem;
+
+    }
+    main .recent-orders table{
+        width: 83vh;
+    }
+    main table thead tr th:last-child,
+    main table thead tr th:first-child{
+        display: none;
+    }
+    main table tbody tr th:last-child,
+    main table tbody tr th:first-child{
+        display: none;
+    }
+    
+
+}

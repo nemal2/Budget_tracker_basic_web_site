@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X -UA-Competible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sanaka Main page Title</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="./analysis.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    </head>
+    <body>
+        <!-- navbar top section -->
+        <div class="showcase">
+            <div class="navbar-top">
+                <ul class="left">
+                    <li><a href="#">Galle</a></li>
+                    <li><a href="#"><i class="material-symbols-outlined"></class>schedule</i> Sun - Fri: 9:00 - 19:00</a></li>
+                    <li><a href="#"><i class="material-symbols-outlined">location_on</i> 22 Faculty of Engineering, University of Ruhuna , Galle</a></li>
+                    <li><a href="#"><i class="material-symbols-outlined">call</i> +94 777 222 898</a></li>
+                </ul>
+
+                <!-- In hear these icons are not showing -->
+                <ul class="right">
+                    <li><a href="#">Facebook   <i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#">Twitter    <i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#">Instagram  <i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#">Linkedin   <i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>    
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <a href="#home" class="brand-left">L I Z A</a>
+                    <div class="close" id="close-btn">
+                        <span class="material-symbols-outlined">close</span>
+                    </div>
+                </div>
+                <div  class="sidebar">
+                    <a href="./dashboard.html" class="Dashboard">
+                        <span class="material-symbols-outlined">grid_view</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="./profile.html" class="C">
+                        <span class="material-symbols-outlined">person</span>
+                        <h3>Profile</h3>
+                    </a>
+                    <a href="./analysis.html" class="Analysis">
+                        <span class="material-symbols-outlined">monitoring</span>
+                        <h3>Analysis</h3>
+                    </a>
+                    <a href="./report.html" class="report">
+                        <span class="material-symbols-outlined">summarize</span>
+                        <h3>Reports</h3>
+                    </a>
+                    <a href="./settings.html" class="settings">
+                        <span class="material-symbols-outlined">settings</span>
+                        <h3>Settings</h3>
+                    </a>
+                    
+                    <a href="#">
+                        <span class="material-symbols-outlined">logout</span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </aside>
+            <!-- --------------------- end of aside -------------------- -->
+            <main>
+                <h1>Analysis</h1>
+
+                <div class="form">
+
+                    <div class="input-section">
+                        <h2>Input Section</h2>
+                        <label for ="category-select">Choose your Category:</label>
+                        <select id ="category-select">
+                            <option values ="Food & Beverage">Food & Beverage</option>
+                            <option values ="Transport">Transport</option>
+                            <option values ="Rent">Rent</option>
+                            <option values ="Health">Health</option>
+                            <option values ="Entertainment">Entertainment</option>
+                        </select>
+                        <label for="amount-input">Amount:</label>
+                        <input type="number" id="amount-input">
+                        <label for="date-input">Date:</label>
+                        <input type="date" id="date-input">
+                        <button id="add-btn">Add</button>
+            
+                    </div>
+                    <div class="expenses-list">
+                        <h2>Expenses List</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="expense-table-body">
+            
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total</td>
+                                    <td id="total-amount"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <a href = "#">Show All</a>
+                    </div>
+                </div>    
+                
+            </main>
+            <!--------------------------- End of main ------------------->
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hay,<b>Jhone Done</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!---------------------- End of top ---------------------------->
+            </div>         
+        </div>
+        
+        <script src="./analysis.js"></script>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                    <p>Welcome to Personal Finance Tracker! Simplifying financial management, clear tutorials, and informed decisions. Agree to terms. Begin your journey to financial wellness today!</p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: Liza@gmail.com</p>
+                    <p>Phone: +9476386524</p>
+                </div>
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <p>Connect with us on social media:</p>
+                    <ul>
+                        <li><a href="#">Facebook   <i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#">Twitter    <i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#">Instagram  <i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#">Linkedin   <i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section resources">
+                    <h2>Additional Resources</h2>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Liza Finance Tracker. All rights reserved.
+            </div>
+        </footer>
+        
+    </body>
+
+</html>
